@@ -22,7 +22,7 @@ def main_page():
         st.markdown("<button title='under_construction' style='cursor: not-allowed; background-color:#f0f0f0; color: gray; border: 1px solid lightgray; padding: 0.5em 1em; border-radius:5px;'>SALAK</button>", unsafe_allow_html=True)
     with col4:
         if st.button("SALAK UNIT 1"):
-            st.session_state.page = "UNIT 1"
+            st.session_state.page = "SALAK UNIT 1"
     with col5:
         st.markdown("<button title='under_construction' style='cursor: not-allowed; background-color:#f0f0f0; color: gray; border: 1px solid lightgray; padding: 0.5em 1em; border-radius:5px;'>LAHENDONG</button>", unsafe_allow_html=True)
 
@@ -40,7 +40,7 @@ def unit1_page():
     st.markdown("<h2 style='text-align: center;'>UNIT SALAK</h2>", unsafe_allow_html=True)
     st.button("BACK", on_click=back_to_main)
     
-    st.markdown("<h1 style='text-align: center;'>Kalkulator Penghitung Inlet Condenser Valve</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Kalkulator Cold Basin</h1>", unsafe_allow_html=True)
     st.markdown('---' * 10)
 
     # Fungsi prediksi model regresi
@@ -119,3 +119,4 @@ if st.session_state.page == "main":
     main_page()
 elif st.session_state.page == "UNIT 1":
     unit1_page()
+
